@@ -13,6 +13,7 @@ body {
 
 header {
     text-align: center;
+    text-decoration: dashed;
     background-color: #006633; /* Celtic green */
     color: white;
     padding: 30px 20px;
@@ -126,4 +127,5 @@ footer {
         display: block;
         margin: 10px 0;
     }
+
 }
