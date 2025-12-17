@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Grant - Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="../Mainpage.html" class="home-link">← Home</a>
+        <h1>David Grant</h1>
+        <p class="tagline">Dedicated College Student • Team-Oriented • Eager to Learn & Grow</p>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <h2>Work Objectives</h2>
+            <p>Hard-working and dedicated college student with experience in multiple fields. Willing to learn and grow in any role, with a particular passion for positions involving people and helping others reach their full potential.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <ul class="section-list">
+                <li>
+                    <strong>Brigham Young University</strong>
+                    <span class="date">January 2025 – December 2027 (Expected)</span>
+                </li>
+                <li>
+                    <strong>Clark College</strong>
+                    <span class="date">September 2020 – May 2021</span>
+                </li>
+                <li>
+                    <strong>Skyview High School</strong> — Graduated 2022
+                    <span class="date"></span>
+                    <ul class="sub-list">
+                        <li>Participated in dual enrollment program with Clark College</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            <ul class="section-list experience-list">
+                <li>
+                    <strong>Sports Camps Planner</strong> — BYU Sports Camps
+                    <span class="date">January 2025 – Present</span>
+                    <ul class="sub-list">
+                        <li>Oversee hiring of coaches and counselors for numerous camps</li>
+                        <li>Reserve appropriate fields and rooms for different sports</li>
+                        <li>Responsible for distribution of camp materials and gear</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Sourdough Baker</strong> — Columbia River Sourdough Bakery
+                    <span class="date">May 2021 – December 2024</span>
+                    <ul class="sub-list">
+                        <li>Trained in multiple stages of the production process</li>
+                        <li>Ran company stall at local farmers market on weekends</li>
+                        <li>Handled daily delivery to twenty stores and managed inventory</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Swim Instructor</strong> — Kids Club
+                    <span class="date">May 2021 – September 2021</span>
+                    <ul class="sub-list">
+                        <li>Responsible for safety and swim training of children ages 3–13</li>
+                        <li>CPR and Shallow Water Lifeguard certified</li>
+                        <li>Opened and prepped pool daily</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Receptionist</strong> — Carter Park Dental Office
+                    <span class="date">June 2020 – September 2020</span>
+                    <ul class="sub-list">
+                        <li>Processed payments over phone and in person</li>
+                        <li>Organized and scheduled appointments for patients</li>
+                        <li>Scanned patient forms for digital records</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Lawn Care Provider</strong> — Private Clients (Neighbors & Friends)
+                    <span class="date">January 2020 – Present</span>
+                </li>
+                <li>
+                    <strong>Youth Soccer Referee</strong> — U.S. Soccer Federation
+                    <span class="date">April 2017 – April 2021</span>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Major Volunteer Experience</h2>
+            <ul class="section-list">
+                <li>
+                    <strong>Full-Time Missionary</strong> — The Church of Jesus Christ of Latter-day Saints
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Awards & Achievements</h2>
+            <ul class="section-list simple-list">
+                <li>Eagle Scout</li>
+                <li>Varsity Letter – High School Soccer (2 years)</li>
+                <li>Varsity Letter – High School Cross Country (1 year)</li>
+                <li>Varsity Letter – High School Swimming (3 years)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Hobbies & Interests</h2>
+            <ul class="section-list simple-list">
+                <li>Participating in and watching soccer</li>
+                <li>Running, swimming, and strength training</li>
+                <li>Designing and constructing 3D renderings of structures</li>
+                <li>Tracking and studying hurricanes</li>
+                <li>Studying history with emphasis on the Greco-Roman era</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>David Grant • Resume • Updated December 2025</p>
+    </footer>
+
+</body>
+</html>

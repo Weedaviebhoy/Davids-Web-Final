@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Riddle Generator</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  }
+  #riddle-container {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 700px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  #riddle {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  #answer {
+    font-size: 1.6em;
+    margin: 30px 0;
+    padding: 15px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    display: none;
+  }
+  button {
+    background: #fff;
+    color: #667eea;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+  }
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+  #show-answer {
+    background: rgba(255,255,255,0.3);
+    color: white;
+  }
+  footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    opacity: 0.8;
+  }
+</style>
+</head>
+<body>
+    <a href="../Mainpage.html">Home</a>
+<h1>🧩 Riddle Generator</h1>
+
+<div id="riddle-container">
+  <div id="riddle">Click the button below to get your first riddle!</div>
+  <div id="answer"></div>
+  
+  <button id="new-riddle">Generate New Riddle</button>
+  <button id="show-answer">Show Answer</button>
+</div>
+
+<footer>Made with ❤️ and JavaScript</footer>
+
+<script>
+// List of riddles (feel free to add more!)
+const riddles = [
+  { question: "What has keys but can't open locks?", answer: "A piano" },
+  { question: "What comes once in a minute, twice in a moment, but never in a thousand years?", answer: "The letter M" },
+  { question: "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?", answer: "An echo" },
+  { question: "The more you take, the more you leave behind. What am I?", answer: "Footsteps" },
+  { question: "What can travel around the world while staying in a corner?", answer: "A stamp" },
+  { question: "What has a head, a tail, is brown, and has no legs?", answer: "A penny" },
+  { question: "What gets wetter the more it dries?", answer: "A towel" },
+  { question: "You see a boat filled with people. It has not sunk, but when you look again you don’t see a single person on the boat. Why?", answer: "All the people were married" },
+  { question: "What has hands but cannot clap?", answer: "A clock" },
+  { question: "If you have me, you want to share me. If you share me, you haven't got me. What am I?", answer: "A secret" },
+  { question: "What can you break, even if you never pick it up or touch it?", answer: "A promise" },
+  { question: "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?", answer: "A map" },
+  { question: "What is always in front of you but can’t be seen?", answer: "The future" },
+  { question: "What has one eye but can't see?", answer: "A needle" },
+  { question: "The person who makes it sells it. The person who buys it never uses it. The person who uses it never knows they're using it. What is it?", answer: "A coffin" }
+];
+
+// DOM elements
+const riddleEl = document.getElementById('riddle');
+const answerEl = document.getElementById('answer');
+const newRiddleBtn = document.getElementById('new-riddle');
+const showAnswerBtn = document.getElementById('show-answer');
+
+let currentRiddle = null;
+
+// Function to generate a new riddle
+function generateRiddle() {
+  const randomIndex = Math.floor(Math.random() * riddles.length);
+  currentRiddle = riddles[randomIndex];
+  
+  riddleEl.textContent = currentRiddle.question;
+  answerEl.textContent = currentRiddle.answer;
+  answerEl.style.display = 'none';
+  
+  showAnswerBtn.textContent = 'Show Answer';
+}
+
+// Event listeners
+newRiddleBtn.addEventListener('click', generateRiddle);
+
+showAnswerBtn.addEventListener('click', () => {
+  if (answerEl.style.display === 'none' || answerEl.style.display === '') {
+    answerEl.style.display = 'block';
+    showAnswerBtn.textContent = 'Hide Answer';
+  } else {
+    answerEl.style.display = 'none';
+    showAnswerBtn.textContent = 'Show Answer';
+  }
+});
+
+// Generate first riddle on load
+generateRiddle();
+</script>
+
+</body>
+</html>
